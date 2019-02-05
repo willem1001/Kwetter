@@ -23,6 +23,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/stas/controller/LoginController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/stas/controller/ProfileController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/stas/controller/StartController.java">
           <value>
             <set />
@@ -44,6 +54,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/stas/models/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/profile.jsp">
           <value>
             <set />
           </value>

@@ -15,6 +15,14 @@ public class User {
     private List<User> following;
     private List<Tweet> tweets;
 
+    public User() { }
+
+    public User(String userName, String passWord) {
+        this.userName = userName;
+        this.passWord = passWord;
+    }
+
+
     public void addFollower(User user) {
         followers.add(user);
     }
