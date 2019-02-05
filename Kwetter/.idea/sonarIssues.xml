@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/stas/config/MvcConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
