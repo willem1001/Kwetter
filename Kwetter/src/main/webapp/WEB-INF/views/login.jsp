@@ -1,5 +1,4 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ page import="com.stas.controller.LoginController" %>
 <%--
   Created by IntelliJ IDEA.
   User: Willem
@@ -13,17 +12,17 @@
     <title>Login</title>
 </head>
 <body>
-<h3>Welcome, Enter The Employee Details</h3>
+<h3>Login</h3>
 <form:form method="POST"
-           action="/Kwetter/login" modelAttribute="user">
+           action="/Kwetter/logUserIn" modelAttribute="user">
     <table>
-        <tr>+
+        <tr>
             <td><form:label path="userName">Name</form:label></td>
             <td><form:input path="userName"/></td>
         </tr>
         <tr>
-            <td><form:label path="passWord">Password</form:label></td>
-            <td><form:input path="passWord"/></td>
+            <td><form:label path="password">Password</form:label></td>
+            <td><form:password path="password"/></td>
         </tr>
         <tr>
             <td><input type="submit" value="Submit"/></td>

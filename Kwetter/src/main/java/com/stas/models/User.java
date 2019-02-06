@@ -4,9 +4,10 @@ import java.util.List;
 
 public class User {
 
+    private Long id;
     private String picturePath;
     private String userName;
-    private String passWord;
+    private String password;
     private String bio;
     private String location;
     private String website;
@@ -17,11 +18,12 @@ public class User {
 
     public User() { }
 
-    public User(String userName, String passWord) {
+    public User(String userName, String password) {
         this.userName = userName;
-        this.passWord = passWord;
+        this.password = password;
     }
 
+    public int getId() { return this.getId(); }
 
     public void addFollower(User user) {
         followers.add(user);
@@ -47,12 +49,12 @@ public class User {
         this.userName = userName;
     }
 
-    public String getPassWord() {
-        return passWord;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setPassword(String passWord) {
+        this.password = passWord;
     }
 
     public String getBio() {

@@ -11,7 +11,26 @@
     <title>Title</title>
 </head>
 <body>
+
+<form:form method="POST"
+           action="/Kwetter/login" modelAttribute="user">
+    <table>
+        <tr>+
+            <td><form:label path="userName">Name</form:label></td>
+            <td><form:input path="userName"/></td>
+        </tr>
+        <tr>
+            <td><form:label path="password">Password</form:label></td>
+            <td><form:input path="password"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+</form:form>
 ${user.userName}
-${user.passWord}
+${user.password}
+
+
 </body>
 </html>

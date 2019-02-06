@@ -1,5 +1,8 @@
 package com.stas.controller;
 
+import com.stas.Interfaces.ILogin;
+import com.stas.config.Enums.SuccesState;
+import com.stas.models.ILoginImpl;
 import com.stas.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -13,15 +16,20 @@ import java.io.IOException;
 
 @Controller
 public class LoginController {
-    @RequestMapping(value="/loginPage")
+
+    private ILogin iLogin = new ILoginImpl();
+    @RequestMapping(value="/login")
     public ModelAndView loginPage(HttpServletResponse response, ModelMap modelMap) throws IOException {
         modelMap.addAttribute("user", new User());
         return new ModelAndView("login");
     }
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/logUserIn", method = RequestMethod.POST)
     public String submit(@ModelAttribute("user") User user, BindingResult bindingResult, ModelMap modelMap) {
-        modelMap.addAttribute("user", user);
-        return "profile";
+        if(iLogin.logIn(user.getUserName(), user.getPassword()) == SuccesState.SUCCESS) {
+            modelMap.addAttribute("user", user);
+            return "profile";
+        }
+        return "login";
     }
 }
