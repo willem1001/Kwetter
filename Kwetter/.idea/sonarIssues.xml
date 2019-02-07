@@ -13,6 +13,7 @@
             <set />
           </value>
         </entry>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$/src/main/java/com/stas/Functions/LogIn.java">
           <value>
             <set />
@@ -138,6 +139,8 @@
             <set />
           </value>
         </entry>
+=======
+>>>>>>> parent of 988fc5b... gitignore
       </map>
     </option>
   </component>
